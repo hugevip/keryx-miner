@@ -21,7 +21,7 @@ Download the version corresponding to your system from the repository's **Releas
 #### Steps
 
 ```bash
-git clone https://github.com/Keryx-Labs/keryx-miner.git
+git clone https://github.com/hugevip/keryx-miner.git
 cd keryx-miner
 cargo build --release --all
 ```
