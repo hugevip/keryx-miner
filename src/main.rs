@@ -140,6 +140,7 @@ async fn main() -> Result<(), Error> {
     info!("                 Keryx-Miner GPU {}", env!("CARGO_PKG_VERSION"));
     info!(" Mining for: {}", opt.mining_address);
     info!("=================================================================================");
+     /* 
     // Phase-3 OPoI: load TinyLlama-1.1B before mining starts.
     // Downloads the model (~2.2 GB) on first run. Mining is blocked until ready.
     info!("Loading SLM model (TinyLlama-1.1B) — this may take a few minutes on first run…");
@@ -155,6 +156,7 @@ async fn main() -> Result<(), Error> {
             return Err(format!("model load panicked: {}", e).into());
         }
     }
+    */
     info!("Found plugins: {:?}", plugins);
     info!("Plugins found {} workers", worker_count);
     if worker_count == 0 && opt.num_threads.unwrap_or(0) == 0 {
